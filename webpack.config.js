@@ -7,6 +7,8 @@ module.exports = {
     path: path.resolve(__dirname)
   },
   devServer: {
-    open: true
+    open: true,
+    contentBase: path.resolve(__dirname),
+    watchContentBase: true
   }
 };

@@ -8,6 +8,18 @@
     <script src="./bundle.js"></script>
 </head>
 <body>
-    home page test
+    <a-scene vr-mode-ui="enabled:false" antialias="true" cursor="rayOrigin:mouse" main>
+        <a-assets>
+            <img id="home" crossOrigin="anonymous" src="./images/home.jpg"/>
+        </a-assets>
+
+        <a-camera user-height="0" position="0 0 4" wasd-controls="enabled:false"></a-camera>
+
+        <a-box id="card" width="1" height="1" depth=".001" shader="flat" color="#000" shadow="cast:true; receive:false" rotation="-90 0 0" position="0 -2 -1">
+            <a-text id="card-text" value="WAVEF" align="center"></a-text>
+        </a-box>
+
+        <a-sky src="#home" rotation="0 -90 0"></a-sky>
+    </a-scene>
 </body>
 </html>
