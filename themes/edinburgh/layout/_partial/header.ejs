@@ -7,7 +7,7 @@
     <ul class="navbar-nav ml-auto my-auto">
       <% for (var i in config.menu){ %>
         <li class="nav-item">
-          <a class="nav-link" href="<%- url_for(config.menu[i], _scheme='https') %>"><%= i %></a>
+          <a class="nav-link" data-no-instant href="<%- url_for(config.menu[i]) %>"><%= i %></a>
         </li>
       <% } %>
     </ul>
