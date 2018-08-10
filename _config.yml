@@ -87,5 +87,5 @@ theme: edinburgh
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: git@github.com:wavef/wavef.github.io.git
+  repo: https://github.com/WaveF/wavef.git
   branch: master
